@@ -9,7 +9,8 @@
 ### Display Linux system information
 
 ```sh
-uname -a
+<span style="color: red;">uname -a</span>
+
 ```
 
 ### Display kernel release information
