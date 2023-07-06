@@ -461,3 +461,99 @@ wget http://domain.com/file
   ```sh
 netstat -nutlp
   ```
+
+## 9 – ARCHIVES (TAR FILES)
+
+### Create tar named archive.tar containing directory.
+  ```sh
+tar cf archive.tar directory
+  ```
+
+### Extract the contents from archive.tar.
+  ```sh
+tar xf archive.tar
+  ```
+
+### Create a gzip compressed tar file name archive.tar.gz.
+  ```sh
+tar czf archive.tar.gz directory
+  ```
+
+### Extract a gzip compressed tar file.
+  ```sh
+tar xzf archive.tar.gz
+  ```
+
+### Create a tar file with bzip2 compression
+  ```sh
+tar cjf archive.tar.bz2 directory
+  ```
+
+### Extract a bzip2 compressed tar file.
+  ```sh
+tar xjf archive.tar.bz2
+  ```
+
+## 10 – INSTALLING PACKAGES
+
+### Search for a package by keyword.
+  ```sh
+yum search keyword
+  ```
+
+### Install package.
+  ```sh
+yum install package
+  ```
+
+### Display description and summary information about package.
+  ```sh
+yum info package
+  ```
+
+### Install package from local file named package.rpm
+  ```sh
+rpm -i package.rpm
+  ```
+
+### Remove/uninstall package.
+  ```sh
+yum remove package
+  ```
+
+### Install software from source code.
+  ```sh
+tar zxvf sourcecode.tar.gz
+cd sourcecode
+./configure
+make
+make install
+  ```
+
+## 11 – SEARCH
+
+### Search for pattern in file
+  ```sh
+grep pattern file
+  ```
+
+### Search recursively for pattern in directory
+  ```sh
+grep -r pattern directory
+  ```
+
+### Find files and directories by name
+  ```sh
+locate name
+  ```
+
+### Find files in /home/john that start with "prefix".
+  ```sh
+find /home/john -name 'prefix*'
+  ```
+
+### Find files larger than 100MB in /home
+  ```sh
+find /home -size +100M
+  ```
+
