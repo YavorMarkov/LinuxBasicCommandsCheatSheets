@@ -71,7 +71,6 @@ whoami
 
 # 2 – HARDWARE INFORMATION
 
-## 2 – HARDWARE INFORMATION
 
 ### Display messages in kernel ring buffer
 
