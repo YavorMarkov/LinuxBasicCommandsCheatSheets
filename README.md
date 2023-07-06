@@ -126,61 +126,61 @@ badblocks -s /dev/sda
 # 3 – PERFORMANCE MONITORING AND STATISTICS
 
 ### Display and manage the top processes
-\```sh
+  ```sh
 top
-\```
+  ```
 
 ### Interactive process viewer (top alternative)
-\```sh
+  ```sh
 htop
-\```
+  ```
 
 ### Display processor related statistics
-\```sh
+  ```sh
 mpstat 1
-\```
+  ```
 
 ### Display virtual memory statistics
-\```sh
+  ```sh
 vmstat 1
-\```
+  ```
 
 ### Display I/O statistics
-\```sh
+  ```sh
 iostat 1
-\```
+  ```
 
 ### Display the last 100 syslog messages (Use /var/log/syslog for Debian based systems.)
-\```sh
+  ```sh
 tail 100 /var/log/messages
-\```
+  ```
 
 ### Capture and display all packets on interface eth0
-\```sh
+  ```sh
 tcpdump -i eth0
-\```
+  ```
 
 ### Monitor all traffic on port 80 ( HTTP )
-\```sh
+  ```sh
 tcpdump -i eth0 'port 80'
-\```
+  ```
 
 ### List all open files on the system
-\```sh
+  ```sh
 lsof
-\```
+  ```
 
 ### List files opened by user
-\```sh
+  ```sh
 lsof -u user
-\```
+  ```
 
 ### Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
-\```sh
+  ```sh
 free -h
-\```
+  ```
 
 ### Execute "df -h", showing periodic updates
-\```sh
+  ```sh
 watch df -h
-\```
+  ```
