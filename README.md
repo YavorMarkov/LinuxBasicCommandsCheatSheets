@@ -6,7 +6,7 @@
 ## 1 – SYSTEM INFORMATION
 
 
-## Display Linux system information
+### Display Linux system information
 
 ```sh
 uname -a
