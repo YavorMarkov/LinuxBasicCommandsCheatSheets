@@ -122,3 +122,65 @@ hdparm -tT /dev/sda
   ```sh
 badblocks -s /dev/sda
   ```
+
+# 3 – PERFORMANCE MONITORING AND STATISTICS
+
+### Display and manage the top processes
+\```sh
+top
+\```
+
+### Interactive process viewer (top alternative)
+\```sh
+htop
+\```
+
+### Display processor related statistics
+\```sh
+mpstat 1
+\```
+
+### Display virtual memory statistics
+\```sh
+vmstat 1
+\```
+
+### Display I/O statistics
+\```sh
+iostat 1
+\```
+
+### Display the last 100 syslog messages (Use /var/log/syslog for Debian based systems.)
+\```sh
+tail 100 /var/log/messages
+\```
+
+### Capture and display all packets on interface eth0
+\```sh
+tcpdump -i eth0
+\```
+
+### Monitor all traffic on port 80 ( HTTP )
+\```sh
+tcpdump -i eth0 'port 80'
+\```
+
+### List all open files on the system
+\```sh
+lsof
+\```
+
+### List files opened by user
+\```sh
+lsof -u user
+\```
+
+### Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
+\```sh
+free -h
+\```
+
+### Execute "df -h", showing periodic updates
+\```sh
+watch df -h
+\```
