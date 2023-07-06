@@ -557,3 +557,91 @@ find /home/john -name 'prefix*'
 find /home -size +100M
   ```
 
+# 12 – SSH LOGINS
+
+### Connect to host as your local username.
+  ```sh
+ssh host
+  ```
+
+### Connect to host as user
+  ```sh
+ssh user@host
+  ```
+
+### Connect to host using port
+  ```sh
+ssh -p port user@host
+  ```
+
+# 13 – FILE TRANSFERS
+
+### Secure copy file.txt to the /tmp folder on server
+  ```sh
+scp file.txt server:/tmp
+  ```
+
+### Copy *.html files from server to the local /tmp folder.
+  ```sh
+scp server:/var/www/*.html /tmp
+  ```
+
+### Copy all files and directories recursively from server to the current system's /tmp folder.
+  ```sh
+scp -r server:/var/www /tmp
+  ```
+
+### Synchronize /home to /backups/home
+  ```sh
+rsync -a /home /backups/
+  ```
+
+### Synchronize files/directories between the local and remote system with compression enabled
+  ```sh
+rsync -avz /home server:/backups/
+  ```
+
+# 14 – DISK USAGE
+
+### Show free and used space on mounted filesystems
+  ```sh
+df -h
+  ```
+
+### Show free and used inodes on mounted filesystems
+  ```sh
+df -i
+  ```
+
+### Display disks partitions sizes and types
+  ```sh
+fdisk -l
+  ```
+
+### Display disk usage for all files and directories in human readable format
+  ```sh
+du -ah
+  ```
+
+### Display total disk usage off the current directory
+  ```sh
+du -sh
+  ```
+
+# 15 – DIRECTORY NAVIGATION
+
+### To go up one level of the directory tree.  (Change into the parent directory.)
+  ```sh
+cd ..
+  ```
+
+### Go to the $HOME directory
+  ```sh
+cd
+  ```
+
+### Change to the /etc directory
+  ```sh
+cd /etc
+  ```
+
