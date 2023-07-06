@@ -185,7 +185,7 @@ free -h
 watch df -h
   ```
 
-## 4 – USER INFORMATION AND MANAGEMENT
+# 4 – USER INFORMATION AND MANAGEMENT
 
 ### Display the user and group ids of your current user.
   ```sh
@@ -227,7 +227,7 @@ userdel john
 usermod -aG sales john
   ```
 
-## 5 – FILE AND DIRECTORY COMMANDS
+# 5 – FILE AND DIRECTORY COMMANDS
 
 ### List all files in a long listing (detailed) format
   ```sh
@@ -312,4 +312,61 @@ tail file
 ### Display the last 10 lines of file and "follow" the file as it grows.
   ```sh
 tail -f file
+  ```
+
+# 6 – PROCESS MANAGEMENT
+
+### Display your currently running processes
+  ```sh
+ps
+  ```
+
+### Display all the currently running processes on the system.
+  ```sh
+ps -ef
+  ```
+
+### Display process information for processname
+  ```sh
+ps -ef | grep processname
+  ```
+
+### Display and manage the top processes
+  ```sh
+top
+  ```
+
+### Interactive process viewer (top alternative)
+  ```sh
+htop
+  ```
+
+### Kill process with process ID of pid
+  ```sh
+kill pid
+  ```
+
+### Kill all processes named processname
+  ```sh
+killall processname
+  ```
+
+### Start program in the background
+  ```sh
+program &
+  ```
+
+### Display stopped or background jobs
+  ```sh
+bg
+  ```
+
+### Brings the most recent background job to foreground
+  ```sh
+fg
+  ```
+
+### Brings job n to the foreground
+  ```sh
+fg n
   ```
