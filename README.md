@@ -462,7 +462,7 @@ wget http://domain.com/file
 netstat -nutlp
   ```
 
-## 9 – ARCHIVES (TAR FILES)
+# 9 – ARCHIVES (TAR FILES)
 
 ### Create tar named archive.tar containing directory.
   ```sh
@@ -494,7 +494,7 @@ tar cjf archive.tar.bz2 directory
 tar xjf archive.tar.bz2
   ```
 
-## 10 – INSTALLING PACKAGES
+# 10 – INSTALLING PACKAGES
 
 ### Search for a package by keyword.
   ```sh
@@ -530,7 +530,7 @@ make
 make install
   ```
 
-## 11 – SEARCH
+# 11 – SEARCH
 
 ### Search for pattern in file
   ```sh
