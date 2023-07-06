@@ -226,3 +226,4 @@ userdel john
 \```sh
 usermod -aG sales john
 \```
+
