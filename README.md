@@ -184,3 +184,45 @@ free -h
   ```sh
 watch df -h
   ```
+
+## 4 – USER INFORMATION AND MANAGEMENT
+
+### Display the user and group ids of your current user.
+\```sh
+id
+\```
+
+### Display the last users who have logged onto the system.
+\```sh
+last
+\```
+
+### Show who is logged into the system.
+\```sh
+who
+\```
+
+### Show who is logged in and what they are doing.
+\```sh
+w
+\```
+
+### Create a group named "test".
+\```sh
+groupadd test
+\```
+
+### Create an account named john, with a comment of "John Smith" and create the user's home directory.
+\```sh
+useradd -c "John Smith" -m john
+\```
+
+### Delete the john account.
+\```sh
+userdel john
+\```
+
+### Add the john account to the sales group
+\```sh
+usermod -aG sales john
+\```
