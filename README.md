@@ -5,8 +5,10 @@
 
 ## 1 – SYSTEM INFORMATION
 
-```sh
+
 # Display Linux system information
+
+```sh
 uname -a
 ```
 
@@ -58,3 +60,5 @@ w
 # Who you are logged in as
 whoami
 ```
+
+# 2 – HARDWARE INFORMATION
