@@ -370,3 +370,94 @@ fg
   ```sh
 fg n
   ```
+# 7 – FILE PERMISSIONS
+
+### PERMISSION EXAMPLES
+
+  ```sh
+# U   G   W
+# rwx rwx rwx     
+chmod 777 filename
+# rwx rwx r-x     
+chmod 775 filename
+# rwx r-x r-x     
+chmod 755 filename
+# rw- rw- r--     
+chmod 664 filename
+# rw- r-- r--     
+chmod 644 filename
+  ```
+
+### NOTE: Use 777 sparingly!
+
+### LEGEND
+### U = User
+### G = Group
+### W = World
+
+### r = Read
+### w = write
+### x = execute
+### - = no access
+
+# 8 – NETWORKING
+
+### Display all network interfaces and ip address
+  ```sh
+ifconfig -a
+  ```
+
+### Display eth0 address and details
+  ```sh
+ifconfig eth0
+  ```
+
+### Query or control network driver and hardware settings
+  ```sh
+ethtool eth0
+  ```
+
+### Send ICMP echo request to host
+  ```sh
+ping host
+  ```
+
+### Display whois information for domain
+  ```sh
+whois domain
+  ```
+
+### Display DNS information for domain
+  ```sh
+dig domain
+  ```
+
+### Reverse lookup of IP_ADDRESS
+  ```sh
+dig -x IP_ADDRESS
+  ```
+
+### Display DNS ip address for domain
+  ```sh
+host domain
+  ```
+
+### Display the network address of the host name.
+  ```sh
+hostname -i
+  ```
+
+### Display all local ip addresses
+  ```sh
+hostname -I
+  ```
+
+### Download http://domain.com/file
+  ```sh
+wget http://domain.com/file
+  ```
+
+### Display listening tcp and udp ports and corresponding programs
+  ```sh
+netstat -nutlp
+  ```
