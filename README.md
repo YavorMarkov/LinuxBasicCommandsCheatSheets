@@ -3,7 +3,7 @@
 # Essentials Linux Commands Cheat Sheet
 
 
-## 1 – SYSTEM INFORMATION
+# 1 – SYSTEM INFORMATION
 
 
 ### Display Linux system information
@@ -70,13 +70,6 @@ whoami
 ```
 
 # 2 – HARDWARE INFORMATION
-
-
-### Display messages in kernel ring buffer
-
-```sh
-dmesg
-```
 
 ## 2 – HARDWARE INFORMATION
 
