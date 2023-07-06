@@ -227,3 +227,89 @@ userdel john
 usermod -aG sales john
   ```
 
+## 5 – FILE AND DIRECTORY COMMANDS
+
+### List all files in a long listing (detailed) format
+  ```sh
+ls -al
+  ```
+
+### Display the present working directory
+  ```sh
+pwd
+  ```
+
+### Create a directory
+  ```sh
+mkdir directory
+  ```
+
+### Remove (delete) file
+  ```sh
+rm file
+  ```
+
+### Remove the directory and its contents recursively
+  ```sh
+rm -r directory
+  ```
+
+### Force removal of file without prompting for confirmation
+  ```sh
+rm -f file
+  ```
+
+### Forcefully remove directory recursively
+  ```sh
+rm -rf directory
+  ```
+
+### Copy file1 to file2
+  ```sh
+cp file1 file2
+  ```
+
+### Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory.
+  ```sh
+cp -r source_directory destination
+  ```
+
+### Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2
+  ```sh
+mv file1 file2
+  ```
+
+### Create symbolic link to linkname
+  ```sh
+ln -s /path/to/file linkname
+  ```
+
+### Create an empty file or update the access and modification times of file.
+  ```sh
+touch file
+  ```
+
+### View the contents of file
+  ```sh
+cat file
+  ```
+
+### Browse through a text file
+  ```sh
+less file
+  ```
+
+### Display the first 10 lines of file
+  ```sh
+head file
+  ```
+
+### Display the last 10 lines of file
+  ```sh
+tail file
+  ```
+
+### Display the last 10 lines of file and "follow" the file as it grows.
+  ```sh
+tail -f file
+  ```
