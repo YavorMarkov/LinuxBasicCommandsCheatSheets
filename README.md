@@ -12,52 +12,60 @@
 uname -a
 ```
 
+### Display kernel release information
+
 ```sh
-# Display kernel release information
 uname -r
 ```
 
+### Show which version of redhat installed
+
 ```sh
-# Show which version of redhat installed
 cat /etc/redhat-release
 ```
 
+### Show how long the system has been running + load
+
 ```sh
-# Show how long the system has been running + load
 uptime
 ```
 
+### Show system host name
+
 ```sh
-# Show system host name
 hostname
 ```
 
-```sh
-# Display the IP addresses of the host
-hostname -I
-```
+### Display the IP addresses of the host
 
 ```sh
-# Show system reboot history
+hostname -I
+```
+### Show system reboot history
+
+```sh
 last reboot
 ```
+### Show the current date and time
+
 ```sh
-# Show the current date and time
 date
 ```
 
-```sh
-# Show this month's calendar
-cal
-```
+### Show this month's calendar
 
 ```sh
-# Display who is online
+cal
+```
+### Display who is online
+
+```sh
 w
 ```
 
+### Who you are logged in as
+
 ```sh
-# Who you are logged in as
 whoami
 ```
 
